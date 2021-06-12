@@ -1,10 +1,5 @@
 # Open
 
-## Used Technologies
-<h3>Angular</h3>
-<h3>CSS</h3>
-<hr>
-
 ### Setting Up Project
 
 Install the Angular CLI globally:
