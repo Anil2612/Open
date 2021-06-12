@@ -1,0 +1,21 @@
+
+.rectangle {
+    position: absolute;
+    background-image: radial-gradient(#212121 20%, #fff 20%);
+    background-position: 0 0;
+    background-size: 10px 10px;
+    opacity: 0.3;
+    height: 40px;
+    width: 220px;
+  }
+  
+  .rectangle1 {
+    left: 40%;
+    top: 89%;
+  }
+  
+  .rectangle2 {
+    right: -160px;
+    top: 95%;
+    z-index: -1;
+  }

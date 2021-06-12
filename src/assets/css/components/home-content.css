@@ -1,0 +1,237 @@
+.home-content-container {
+    margin-top: 7.5rem;
+}
+.home-content-container .home-content-wrapper .top-main {
+    padding: 0px 50px;
+    display: flex;
+    position: relative;
+    z-index:2;
+}
+
+.l-container {
+    position: relative;
+    flex-grow: 1;
+}
+
+.main-hr {
+    border: solid black 2px;
+    color: black;
+    background-color: black;
+    border-radius: 0.813rem;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    width: 14.75rem;
+    opacity: 0.7;
+}
+
+.home-content-container .home-content-wrapper .top-main .l-container .heading {
+    margin-left: 20px;
+}
+
+.home-content-container .home-content-wrapper .top-main .l-container .heading h1 {
+    max-width: 380px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.home-content-container .home-content-wrapper .top-main .l-container .hand-shake {
+    width: 38rem;
+    height: 20rem;
+    margin-top: 5.125rem;
+    position: relative;
+    z-index: 1;
+}
+.r-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.r-wrapper .calculator{
+    min-width: 350px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px #2321321F;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+}
+.r-wrapper .calculator .heading {
+    text-align: center;
+    font-size: 1.563rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgb(233, 233, 233,0.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.r-wrapper .getmoney{
+    border: solid gray 1px;
+    margin-left: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #663399;
+    color: white;
+    padding: 10px 0px;
+}
+
+.form {
+    padding: 10px 30px;
+}
+
+.form .form-field  {
+    margin: 10px 0px;
+}
+
+.form .form-field input{
+    width: 100%;
+}
+
+.form .form-field .form-label{
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.form .form-field .form-value{
+    font-size: 1.5rem;
+    margin: 5px 0px;
+    margin-bottom: 1px;
+}
+.form .form-field input{
+    margin: 10px 0px;
+}
+
+.form .form-field .range-value .min{
+    flex-grow: 1;
+    color: rgb(153, 153, 153,0.8);
+}
+.form .form-field .range-value .max{
+    color: rgb(153, 153, 153,0.8);
+}
+
+
+
+  .form .form-field select {
+      padding: 5px;
+      font-size: 1.5rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: solid #999 1px;
+      cursor: pointer;
+  }
+
+  .form .ex-loans {
+      margin-top: 20px
+  }
+  
+  .form .ex-loans .label{
+      font-size: 1rem;
+      flex-grow: 1;
+      color: #999;
+  }
+
+  .emi {
+      margin-top: 15px !important;
+  }
+
+  .emi input {
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: solid #999 1px;
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .getmoney .loan {
+      font-size: 1rem;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      margin: 30px 0px;
+  }
+
+  .getmoney .loan .loan-label {
+      font-weight: 300;
+      color: rgba(1,1,1,1,0.1);
+      margin-top: 10px;
+  }
+
+  .getmoney .loan .loan-amount {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+
+}
+
+.getmoney .loan button {
+    background-color: white;
+    color: #663399;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.getmoney .loan button:hover {
+    background-color: #441c6b;
+    color: white;
+}
+.bottom-main {
+    position: relative;
+}
+.bottom-main .bottom-l {
+    flex-grow: 1;
+}
+.bottom-main .bottom-r {
+    position: relative;
+    z-index: 1;
+}
+.bottom-main .bottom-r h2{
+    max-width: 480px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 8px;
+
+} 
+
+.bottom-main .bottom-r .desc { 
+    font-size: 1.125rem;
+    color: #777777;
+    margin-top: 33px;
+    margin-bottom: 83px;
+    max-width: 250px;
+}
+.bottom-main .bottom-r button {
+    color: #663399;
+    background-color: transparent;
+    border: solid #663399 2px;
+    border-radius: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.bottom-main .bottom-r button:hover {
+    color: white;
+    background-color: #663399;
+}
+
+.bottom-main:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 650px;
+    background: url(../../images/sol_wave_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

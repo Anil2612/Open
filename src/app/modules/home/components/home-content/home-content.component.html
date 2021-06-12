@@ -1,0 +1,110 @@
+<div class="home-content-container">
+    <div class="home-content-wrapper">
+        <div class="top-main">
+            <div class="l-container circle1">
+                <div class="heading">
+                    <h1>We make it Super Simple</h1>
+                    <hr class="main-hr">
+                </div>
+                <img class="hand-shake" src="assets/images/handshake.png" alt="">
+                <div class="rectangle rectangle1"></div>
+            </div>
+            <form class="r-container circle2" [formGroup]="loanForm" (ngSubmit)="getLoan()">
+                <div class="r-wrapper flex-box">
+                    <div class="calculator">
+                        <div class="heading">
+                            Eligibility Calculator
+                        </div>
+                        <div class="form">
+
+                            <div class="form-field">
+                                <div class="form-label">Monthly Income</div>
+                                <div class="form-value">{{loanForm?.value?.monthlyIncome | currency:'INR': 'symbol' :
+                                    '1.0-0'}}</div>
+                                <input class="slider-range mIncome" type="range" formControlName="monthlyIncome"
+                                    min="100000" max="300000" (change)="clickRange($event,'monthlyIncome')"
+                                    (wheel)="changeRange($event,'mIncome','monthlyIncome');$event.preventDefault();">
+                                <div class="range-value flex-box">
+                                    <div class="min">{{minValue| currency:'INR': 'symbol' : '1.0-0'}}</div>
+                                    <div class="max">{{maxRangeValue| currency:'INR': 'symbol' : '1.0-0'}}</div>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <div class="form-label">Monthly Expense</div>
+                                <div class="form-value">{{loanForm?.value?.monthlyExpense | currency:'INR': 'symbol' :
+                                    '1.0-0'}}</div>
+                                <input class="slider-range mExpense" type="range" formControlName="monthlyExpense"
+                                    min="100000" max="300000" (change)="clickRange($event,'monthlyExpense')"
+                                    (wheel)="changeRange($event,'mExpense','monthlyExpense');$event.preventDefault();">
+                            </div>
+
+                            <div class="form-field">
+                                <div class="form-label">Repayment Tenure</div>
+                                <select formControlName="repaymentTenure">
+                                    <option value="0">6 months</option>
+                                    <option value="1">1 Year</option>
+                                    <option value="2">2 Year</option>
+                                </select>
+                            </div>
+                            <div class="ex-loans flex-box">
+                                <div class="label">
+                                    Do you have existing loans?
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" formControlName="haveLoans">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="form-field emi">
+                                <div class="form-label">EMI of existing loan (Optional)</div>
+                                <input type="number" class="form-input" formControlName="emi" placeholder="₹15000">
+                            </div>
+                        </div>
+                        <div class="rectangle rectangle2"></div>
+                    </div>
+                    <div class="getmoney">
+                        <div class="loan">
+                            <div class="loan-label">Loan Amount</div>
+                            <div class="loan-amount">{{minValue | currency:'INR': 'symbol' : '1.0-0'}}</div>
+                            <div class="loan-label">Your EMI will be</div>
+                            <div class="loan-amount">{{emiAmount | currency:'INR': 'symbol' : '1.0-0'}}</div>
+                            <button type="submit">GET MONEY</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-main flex-box">
+            <div class="bottom-l">
+                <div class="bottom-l-wrapper flex-box">
+                    <div class="l-cards">
+                        <app-card imgSource="assets/images/GetPaidInstantly.png" heading="Quick cash disbursement"
+                            description="Get terms loans that your business needs within 72 hrs"></app-card>
+                        <app-card imgSource="assets/images/LowInterestRate.png" heading="Low-interest rate"
+                            description="Achieve your financial goals with an amazing interest rate starting at 13% per annum">
+                        </app-card>
+                        <app-card imgSource="assets/images/SecurePayments.png" heading="Zero Paperwork"
+                            description="Get started instantly by submitting only your basic details & bank statements">
+                        </app-card>
+                    </div>
+                    <div class="r-cards">
+                        <app-card imgSource="assets/images/freelancer_feature.png" heading="Ace your business finances"
+                            description="Manage banking, accounting & everything in between, on one platform">
+                        </app-card>
+                        <app-card imgSource="assets/images/Covid.png" heading="Loans to fight COVID-19"
+                            description="Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh">
+                        </app-card>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-r">
+                <h2>Boost your Business with Open</h2>
+                <hr class="main-hr">
+                <div class="desc">
+                    Get your hands on a term loan that’s crafted for your business
+                </div>
+                <button class="open-account">Get an Open Account</button>
+            </div>
+        </div>
+    </div>

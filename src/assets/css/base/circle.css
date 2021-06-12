@@ -1,0 +1,27 @@
+.circle1:before {
+    top: -65px;
+    left: -190px;
+    width: 450px;
+    height: 450px;
+    content: "";
+    position: absolute;
+    background: url(../../images/circle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+  
+  
+  .circle2:before {
+    position: absolute;
+    top: -32.625rem;
+    right: 0;
+    width: 66.813rem;
+    height: 73.125rem;
+    content: "";
+    background: url(../../images/circle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
