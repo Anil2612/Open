@@ -1,10 +1,11 @@
 # Open
 
-<h1 align="center">Angular - The modern web developer's platform.</h1>
-<h2 align="center">CSS - To style an HTML document</h2>
+## Used Technologies
+<h3>Angular</h3>
+<h3>CSS</h3>
 <hr>
 
-### Setting Up a Project
+### Setting Up Project
 
 Install the Angular CLI globally:
 
