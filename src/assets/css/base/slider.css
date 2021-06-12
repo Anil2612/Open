@@ -1,0 +1,21 @@
+.form .form-field .slider-range {
+    -webkit-appearance: none;
+    background: #663399;
+    height: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form .form-field .slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: solid white 3px;
+    background: #663399;
+    cursor: pointer;
+    box-shadow: 3px 1px 5px -1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 1px 5px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 1px 5px -1px rgba(0,0,0,0.5);
+  }
